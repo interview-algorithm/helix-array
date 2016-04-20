@@ -1,0 +1,41 @@
+{
+  "name": "helix-array",
+  "version": "1.0.0",
+  "description": "Helix an array",
+  "main": "helix-array.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "prepublish": "NODE_ENV=release ./node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanni4night/helix-array.git"
+  },
+  "keywords": [
+    "helix",
+    "array"
+  ],
+  "author": "yanni4night@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanni4night/helix-array/issues"
+  },
+  "homepage": "https://github.com/yanni4night/helix-array#readme",
+  "devDependencies": {
+    "babel-core": "^6.7.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-check-es2015-constants": "^6.7.2",
+    "babel-plugin-transform-object-assign": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-preset-es2015": "^6.1.18",
+    "dateformat": "^1.0.12",
+    "eslint": "^2.5.3",
+    "eslint-loader": "^1.3.0",
+    "mocha": "^2.4.5",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "is-integer": "^1.0.6",
+    "isarray": "^1.0.0"
+  }
+}
