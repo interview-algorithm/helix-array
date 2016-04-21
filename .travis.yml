@@ -3,6 +3,6 @@ before_install:
 sudo: false # this opts into the container-base infrastructure that has no sudo commnand avaliable, but runs much faster
 node_js:
   - "0.12" 
-  - "4.1"
-  - "5.2"
+  - "4"
+  - "5"
   - stable
