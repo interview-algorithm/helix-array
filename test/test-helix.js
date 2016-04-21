@@ -59,6 +59,22 @@ describe('Helix array', function () {
         });
     });
 
+    var arr6 = g(6);
+
+    describe('Array with 6 elements', function () {
+        it('should helix(2, 3)\n' + matrix(arr6, 2, 3), function () {
+            var ret = helixArray(arr6, 2, 3);
+            var expected = [0, 1, 3, 5, 4, 2];
+            assert.deepEqual(ret, expected);
+        });
+
+        it('should helix(3, 2)\n' + matrix(arr6, 3, 2), function () {
+            var ret = helixArray(arr6, 3, 2);
+            var expected = [0, 1, 2, 5, 4, 3];
+            assert.deepEqual(ret, expected);
+        });
+    });
+
     var arr20 = g(20);
 
     describe('Array with 20 elements', function () {
