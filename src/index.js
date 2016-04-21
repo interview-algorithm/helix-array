@@ -21,15 +21,19 @@ const helixFrom = (arr, x, y, width, height, oriWidth, oriHeight) => {
     let ret = arr.slice(oriWidth * x + y, oriWidth * x + y + width);
 
     for (let i = 0; i < height - 2; ++i) {
-        ret.push(arr[oriWidth * (y + i + 1) + width - 1]);
+        ret.push(arr[oriWidth * (y + i + 1) + x + width - 1]);
     }
 
-    for (let i = width - 1; i >= 0; --i) {
-        ret.push(arr[oriWidth * (y + height - 1) + x + i]);
+    if (height > 1) {
+        for (let i = width - 1; i >= 0; --i) {
+            ret.push(arr[oriWidth * (y + height - 1) + x + i]);
+        }
     }
 
-    for (let i = height - 2; i > 0; --i) {
-        ret.push(arr[oriWidth * (y + i)]);
+    if (width > 1) {
+        for (let i = height - 2; i > 0; --i) {
+            ret.push(arr[oriWidth * (y + i) + x]);
+        }
     }
 
     return ret;
@@ -47,8 +51,13 @@ export const helixArray = (arr, width, height) => {
     if (width * height !== arr.length) {
         throw new Error('Array\'s length should equal "width"*"height"');
     }
+
+    if (!arr.length) {
+        return [];
+    }
+
     let ret = [];
-    for (let i = 0; i < ((Math.min(width, height) / 2) | 0); ++i) {
+    for (let i = 0; i < Math.ceil((Math.min(width, height) / 2)); ++i) {
         ret = ret.concat(helixFrom(arr, i, i, width - i * 2, height - i * 2, width, height));
     }
 
