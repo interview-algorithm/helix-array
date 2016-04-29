@@ -23,9 +23,9 @@ helixArray(arr, 3, 2)// [0, 1, 2, 5, 4, 3]
 [npm-url]: https://npmjs.org/package/helix-array
 [downloads-image]: http://img.shields.io/npm/dm/helix-array.svg
 [npm-image]: http://img.shields.io/npm/v/helix-array.svg
-[travis-url]: https://travis-ci.org/yanni4night/helix-array
-[travis-image]: http://img.shields.io/travis/yanni4night/helix-array.svg
-[david-dm-url]:https://david-dm.org/yanni4night/helix-array
-[david-dm-image]:https://david-dm.org/yanni4night/helix-array.svg
-[david-dm-dev-url]:https://david-dm.org/yanni4night/helix-array#info=devDependencies
-[david-dm-dev-image]:https://david-dm.org/yanni4night/helix-array/dev-status.svg
+[travis-url]: https://travis-ci.org/interview-algorithm/helix-array
+[travis-image]: http://img.shields.io/travis/interview-algorithm/helix-array.svg
+[david-dm-url]:https://david-dm.org/interview-algorithm/helix-array
+[david-dm-image]:https://david-dm.org/interview-algorithm/helix-array.svg
+[david-dm-dev-url]:https://david-dm.org/interview-algorithm/helix-array#info=devDependencies
+[david-dm-dev-image]:https://david-dm.org/interview-algorithm/helix-array/dev-status.svg

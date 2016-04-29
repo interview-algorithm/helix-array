@@ -1,6 +1,6 @@
 {
   "name": "helix-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helix an array",
   "main": "helix-array.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yanni4night/helix-array.git"
+    "url": "git+https://github.com/interview-algorithm/helix-array.git"
   },
   "keywords": [
     "helix",
@@ -18,9 +18,9 @@
   "author": "yanni4night@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yanni4night/helix-array/issues"
+    "url": "https://github.com/interview-algorithm/helix-array/issues"
   },
-  "homepage": "https://github.com/yanni4night/helix-array#readme",
+  "homepage": "https://github.com/interview-algorithm/helix-array#readme",
   "devDependencies": {
     "babel-core": "^6.7.4",
     "babel-loader": "^6.2.4",

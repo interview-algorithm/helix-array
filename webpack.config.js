@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2016 tieba.baidu.com
+ * Copyright (C) 2016 yanni4night.com
  *  webpack.config.js
  *
  * changelog
@@ -47,7 +47,7 @@ const config = {
     plugins: [
         new webpack.BannerPlugin('/*! helix-array.js ' + (isDev ? 'Development' : 'Release') + ' v' + pkg.version +
             ' Build ' + timestamp + ' | (C) 2015~' + endYear +
-            ' yanni4night.com | github.com/yanni4night/helix-array | MIT */\n', {
+            ' yanni4night.com | github.com/interview-algorithm/helix-array | MIT */\n', {
                 raw: true,
                 entryOnly: true
             })
